@@ -37,6 +37,8 @@ install_grails()
 
   GRAILS_ZIP_FILE="grails-heroku.zip"
   echo "-----> Installing Grails $VER_TO_INSTALL....."
+  echo $GRAILS_URL
+  echo $GRAILS_ZIP_FILE
   curl --silent --max-time 600 --location $GRAILS_URL -o $GRAILS_ZIP_FILE
 
   # Error checking
